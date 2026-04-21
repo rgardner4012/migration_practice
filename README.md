@@ -15,7 +15,7 @@ The source of truth for what these VMs *should be* lives in VMware today. Queryi
 The end-to-end workflow this repo demonstrates:
 
 1. Define the batch of systems/environments to migrate, accounting for bandwidth, storage, and environment dependencies.
-2. Script discovery of supporting resources (port groups, datastores, resource pools, tags, etc) and create them as terraform modules following any architectural, policy, and naming standards.
+2. Script discovery of supporting resources (port groups, datastores, resource pools, tags, etc.) and create them as Terraform modules following any architectural, policy, and naming standards.
 3. Query vCenter for each VM's pertinent attributes and translate source constructs to target-specific resources (I.e. VLAN_PROD_WEBSERVERS -> prod-webtier via mapping table or translation rules).
 4. Migrate VM's via scripted Nutanix Move using the target manifest from step 3.
 5. Update the manifest with the Nutanix UUID and run terraform import.
