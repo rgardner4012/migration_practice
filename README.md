@@ -39,7 +39,7 @@ The discovery layer is two separate concerns.
 
 ## Credential handling
 
-The examples here use variables for credentials to keep this simple, in production a different mechanism would be used (vault/IAM).
+The examples here use variables for credentials to keep this simple. In production, a different mechanism would be used (vault/IAM).
 
 ## What's not in this repo
 
