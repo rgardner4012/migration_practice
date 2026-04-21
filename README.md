@@ -41,6 +41,11 @@ The discovery layer is two separate concerns.
 
 The examples here use variables for credentials to keep this simple. In production, a different mechanism would be used (vault/IAM).
 
+## Testing
+
+### Discovery
+Current discovery script integration testing is run against a VCsim instance which can be loaded with docker compose from the docker-compose-vcsim.yml file.
+
 ## What's not in this repo
 
 Things that might be part of a real production deployment but are out of scope for a reference implementation:
@@ -52,3 +57,7 @@ Things that might be part of a real production deployment but are out of scope f
 - Execution environment images for Ansible Automation Platform
 
 Each of these would be layered on top of the patterns demonstrated here.
+
+## References
+VCF code examples -- https://github.com/vmware/vcf-sdk-python
+VMware automation tagging example -- https://github.com/vmware/vsphere-automation-sdk-python/blob/master/sample_template/sample_template_basic.py

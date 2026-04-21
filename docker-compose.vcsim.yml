@@ -1,0 +1,35 @@
+services:
+  vcsim:
+    image: vmware/vcsim:v0.30.0
+    platform: linux/amd64
+    container_name: vcsim
+    command:
+      - -l
+      - "0.0.0.0:8989"
+      - -dc
+      - "2"
+      - -cluster
+      - "2"
+      - -host
+      - "3"
+      - -vm
+      - "8"
+      - -ds
+      - "4"
+      - -pool
+      - "2"
+      - -pg
+      - "3"
+      - -folder
+      - "2"
+      - -standalone-host
+      - "0"
+    ports:
+      - "127.0.0.1:8989:8989"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "--no-check-certificate", "https://127.0.0.1:8989/sdk"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 2s

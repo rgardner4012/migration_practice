@@ -1,0 +1,2497 @@
+vms:
+- vm_name: DC0_C0_RP1_VM0
+  source:
+    uuid: f80d7109-9813-5fa4-abcf-86c75550cdb8
+    moid: vm-200
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:64:62:38
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C0_RP1_VM1
+  source:
+    uuid: 2d5b3029-06a7-5d0e-b3f6-b380ff17ff97
+    moid: vm-203
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:66:39:37
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C0_RP1_VM2
+  source:
+    uuid: 7d0fca30-69ef-513c-83e4-3043ba6bcf34
+    moid: vm-206
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:66:33:34
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C0_RP1_VM3
+  source:
+    uuid: 1b95c94e-853d-593a-b52b-fa65146a73ea
+    moid: vm-209
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:33:65:61
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C0_RP1_VM4
+  source:
+    uuid: 07cf1ebd-12d2-5fc4-99bf-c3f4746e68c4
+    moid: vm-212
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:38:63:34
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C0_RP1_VM5
+  source:
+    uuid: 4597c620-cfbd-5efe-b437-a310f56c1af2
+    moid: vm-215
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:61:66:32
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C0_RP1_VM6
+  source:
+    uuid: d5e9ea7c-675b-584e-a30b-681d33e0f983
+    moid: vm-218
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:39:38:33
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C0_RP1_VM7
+  source:
+    uuid: 5be9eec7-9add-563a-be1d-2c9b26aef5db
+    moid: vm-221
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:35:64:62
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C0_RP2_VM0
+  source:
+    uuid: 704cd222-130b-5e9d-b747-074d496f2c0d
+    moid: vm-224
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:63:30:64
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C0_RP2_VM1
+  source:
+    uuid: 42215221-4871-5a16-9efa-62081d799c11
+    moid: vm-227
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:63:31:31
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C0_RP2_VM2
+  source:
+    uuid: f3b593b0-4845-576d-9ac9-b2824939f4c1
+    moid: vm-230
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:34:63:31
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C0_RP2_VM3
+  source:
+    uuid: f8d951dc-31a0-5ec2-aa6f-1a0733ae8341
+    moid: vm-233
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:33:34:31
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C0_RP2_VM4
+  source:
+    uuid: 871e3f0a-6d2f-59d2-b5d0-ceb2455e5cbf
+    moid: vm-236
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:63:62:66
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C0_RP2_VM5
+  source:
+    uuid: b123a8df-2670-58d2-8dfa-40de9eab4967
+    moid: vm-239
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:39:36:37
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C0_RP2_VM6
+  source:
+    uuid: 437af587-3cb4-5cee-89c7-f9ce2d0b08f3
+    moid: vm-242
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:38:66:33
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C0_RP2_VM7
+  source:
+    uuid: e6d7ae03-fcd1-5bca-9db1-1c9eedd4c379
+    moid: vm-245
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:33:37:39
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP1_VM0
+  source:
+    uuid: c0a620dc-6c8d-5417-9809-f780525a12cd
+    moid: vm-248
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:32:63:64
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP1_VM1
+  source:
+    uuid: 854c756a-2a3c-508a-ab40-3ffc20925378
+    moid: vm-251
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:33:37:38
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP1_VM2
+  source:
+    uuid: e62401ec-6ad4-5a9b-87d1-e19adbe06ec1
+    moid: vm-254
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:65:63:31
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP1_VM3
+  source:
+    uuid: 4a12324d-2e8c-54f7-aadb-ed015b218cdb
+    moid: vm-257
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:63:64:62
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP1_VM4
+  source:
+    uuid: eb5571ca-d856-5fb8-a818-533458f91ebb
+    moid: vm-260
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:65:62:62
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP1_VM5
+  source:
+    uuid: 6672b62c-1965-54d6-adbf-f161202226c9
+    moid: vm-263
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:36:63:39
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP1_VM6
+  source:
+    uuid: f9029507-e2e8-59a1-bbce-a3bd56797f06
+    moid: vm-266
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:66:30:36
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP1_VM7
+  source:
+    uuid: ba526bac-8cb9-5121-95ad-e958d3d8a020
+    moid: vm-269
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:30:32:30
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP2_VM0
+  source:
+    uuid: d21ee435-fa5f-5221-9022-2fd9bed67ec4
+    moid: vm-272
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:65:63:34
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP2_VM1
+  source:
+    uuid: b20ac01c-5f01-5958-896b-866e65a878d9
+    moid: vm-275
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:38:64:39
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP2_VM2
+  source:
+    uuid: c9e57fd3-1389-5825-8afd-20be098abcc9
+    moid: vm-278
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:63:63:39
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP2_VM3
+  source:
+    uuid: 3c54925e-7591-5e98-8478-de649d7bbd50
+    moid: vm-281
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:64:35:30
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP2_VM4
+  source:
+    uuid: dcf86d9d-451d-5ae3-b341-3d6f533e30ad
+    moid: vm-284
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:30:61:64
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP2_VM5
+  source:
+    uuid: 69514974-4a16-5a20-a7a4-bfe66050e28d
+    moid: vm-287
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:32:38:64
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP2_VM6
+  source:
+    uuid: da509f8a-db44-5e8a-8999-a5c8236b626c
+    moid: vm-290
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:32:36:63
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC0_C1_RP2_VM7
+  source:
+    uuid: a9d4074a-57bd-5f80-9b23-3e31eaccf32b
+    moid: vm-293
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F0
+    resource_pool: DC0_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-17
+      mac_address: 00:0c:29:33:32:62
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP1_VM0
+  source:
+    uuid: f47be409-f51d-56fe-8a0f-afb5d20c9783
+    moid: vm-296
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:37:38:33
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP1_VM1
+  source:
+    uuid: e885ebfe-2d55-5655-a75a-0f12a0fdd2f9
+    moid: vm-299
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:32:66:39
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP1_VM2
+  source:
+    uuid: cd75422d-7c23-58f6-816f-a0bee1251237
+    moid: vm-302
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:32:33:37
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP1_VM3
+  source:
+    uuid: 4b64f067-67d9-55f7-917f-97443132b534
+    moid: vm-305
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:35:33:34
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP1_VM4
+  source:
+    uuid: f83c3446-b800-529f-9142-922dffcbfd89
+    moid: vm-308
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:64:38:39
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP1_VM5
+  source:
+    uuid: 65c37719-02b4-5093-a879-b0a082251df1
+    moid: vm-311
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:64:66:31
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP1_VM6
+  source:
+    uuid: 27e3e0e2-1b90-5fdc-88ae-a6aff155a9f9
+    moid: vm-314
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:39:66:39
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP1_VM7
+  source:
+    uuid: 2415bef2-2e3d-5c11-91ad-16c89a3ed7a8
+    moid: vm-317
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:37:61:38
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP2_VM0
+  source:
+    uuid: 07ac42d2-91fa-5802-9a5a-f56953bb2afe
+    moid: vm-320
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:61:66:65
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP2_VM1
+  source:
+    uuid: 81eb34ad-0fe5-52fd-9ce1-d1a00cb76253
+    moid: vm-323
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:32:35:33
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP2_VM2
+  source:
+    uuid: 4cd15409-9a63-5ebf-9343-9bd1d144ff53
+    moid: vm-326
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:66:35:33
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP2_VM3
+  source:
+    uuid: 495ed3dd-1137-599c-b0da-c9870aa27feb
+    moid: vm-329
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:66:65:62
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP2_VM4
+  source:
+    uuid: 2812542c-b6be-51ab-a9c1-f1c47f1c2940
+    moid: vm-332
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:39:34:30
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP2_VM5
+  source:
+    uuid: 38d5faef-e0af-5fb3-ab26-01196f97cdc5
+    moid: vm-335
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:64:63:35
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP2_VM6
+  source:
+    uuid: b4077437-5d2a-58eb-b66f-fe1ee1b5dc88
+    moid: vm-338
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:63:38:38
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C0_RP2_VM7
+  source:
+    uuid: 2985bccc-4d72-54e0-ad74-f832f14510d3
+    moid: vm-341
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C0_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:30:64:33
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP1_VM0
+  source:
+    uuid: e6ee9970-7f93-5366-a3de-2f6dd5827883
+    moid: vm-344
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:38:38:33
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP1_VM1
+  source:
+    uuid: 434623cc-5d51-5b96-9f9b-11def1fe19e2
+    moid: vm-347
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:39:65:32
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP1_VM2
+  source:
+    uuid: 0dd7066d-e798-5098-816c-27982026debd
+    moid: vm-350
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:65:62:64
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP1_VM3
+  source:
+    uuid: eeacb561-a5d0-5cbc-b30b-7b12ad4cf8f2
+    moid: vm-353
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:38:66:32
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP1_VM4
+  source:
+    uuid: f0e2a17a-38aa-58c0-ae59-765d6d32efdb
+    moid: vm-356
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:66:64:62
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP1_VM5
+  source:
+    uuid: 62c34437-e810-5a72-8900-439303904d85
+    moid: vm-359
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:64:38:35
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP1_VM6
+  source:
+    uuid: d21d1048-2579-5535-9820-fa92c7342efd
+    moid: vm-362
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:65:66:64
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP1_VM7
+  source:
+    uuid: f980da2c-001f-5137-8653-8b64b051faf4
+    moid: vm-365
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP1
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:61:66:34
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP2_VM0
+  source:
+    uuid: 670dcc7a-283a-519f-8a0c-59182a7775ce
+    moid: vm-368
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:35:63:65
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP2_VM1
+  source:
+    uuid: b89ea9a4-4959-58ff-af8c-32b803b580d8
+    moid: vm-371
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:30:64:38
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP2_VM2
+  source:
+    uuid: 30d91264-b9e0-504d-98d0-b54d9f94b159
+    moid: vm-374
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:31:35:39
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP2_VM3
+  source:
+    uuid: e3bdaaf6-01b1-5c00-b423-8cdaeae3e211
+    moid: vm-377
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:32:31:31
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP2_VM4
+  source:
+    uuid: 30352cc6-da2a-532d-ab3b-0cae181fb42b
+    moid: vm-380
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:34:32:62
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP2_VM5
+  source:
+    uuid: 6ae9173e-305b-535e-b559-5e9e3fbf80ca
+    moid: vm-383
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:30:63:61
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP2_VM6
+  source:
+    uuid: a77441f8-7150-5417-8c81-eb2eca1704af
+    moid: vm-386
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:34:61:66
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
+- vm_name: DC1_C1_RP2_VM7
+  source:
+    uuid: 37b747f6-13f6-5c2a-a389-47c832c7e599
+    moid: vm-389
+    power_state: unknown
+    guest_os: otherGuest
+    folder: F1
+    resource_pool: DC1_C1_RP2
+    cluster: null
+    host: null
+    annotation: null
+    cpu_count: 1
+    cores_per_socket: 1
+    memory_mb: 32
+    disks:
+    - label: disk-202-0
+      size_gb: 10.0
+      thin_provisioned: true
+      datastore: LocalDS_0
+      controller_key: 202
+      unit_number: 0
+    networks:
+    - label: ethernet-0
+      portgroup: dvportgroup-108
+      mac_address: 00:0c:29:35:39:39
+      adapter_type: vim.vm.device.VirtualE1000
+    datastores:
+    - LocalDS_0
+    tags: {}
+  target:
+    cluster: null
+    subnet: null
+    categories: {}
+    disks: []
+  migration:
+    wave: null
+    window: null
+    status: pending
+    nutanix_vm_uuid: null
