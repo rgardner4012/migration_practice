@@ -1,0 +1,29 @@
+metadata:
+  source_vcenter: 127.0.0.1
+  discovered_at: '2026-04-21T19:03:43.756330+00:00'
+portgroups:
+- name: dvportgroup-108
+  type: unknown
+  vlan_id: null
+- name: dvportgroup-17
+  type: unknown
+  vlan_id: null
+datastores:
+- name: LocalDS_0
+  type: OTHER
+  capacity_gb: 6144.0
+  free_gb: 5824.0
+clusters: []
+resource_pools:
+- DC0_C0_RP1
+- DC0_C0_RP2
+- DC0_C1_RP1
+- DC0_C1_RP2
+- DC1_C0_RP1
+- DC1_C0_RP2
+- DC1_C1_RP1
+- DC1_C1_RP2
+folders:
+- F0
+- F1
+tag_categories: {}
