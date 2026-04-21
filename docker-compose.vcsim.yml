@@ -1,6 +1,6 @@
 services:
   vcsim:
-    image: vmware/vcsim:latest
+    image: vmware/vcsim:v0.30.0
     platform: linux/amd64
     container_name: vcsim
     command:
