@@ -278,7 +278,7 @@ def extract_disks(vm) -> list[dict[str, Any]]:
     return disks
 
 
-def extract_networks(vm) -> list[dict[str, Any]]:
+def extract_networks(vm, dvpg_key_lookup: dict[str, str] | None = None) -> list[dict[str, Any]]:
     try:
         devices = vm.config.hardware.device
     except AttributeError:
@@ -296,7 +296,9 @@ def extract_networks(vm) -> list[dict[str, Any]]:
             portgroup = backing.deviceName
         elif isinstance(backing, vim.vm.device.VirtualEthernetCard.DistributedVirtualPortBackingInfo):
             port = backing.port
-            portgroup = port.portgroupKey if port else None
+            if port:
+                key = port.portgroupKey
+                portgroup = (dvpg_key_lookup or {}).get(key, key)
 
         networks.append({
             "label": device.deviceInfo.label,
@@ -390,7 +392,8 @@ def _safe_get(obj, attr, default=None):
         return default
 
 
-def discover_vm(vm, tag_resolver: TagResolver | None = None) -> DiscoveredVM:
+def discover_vm(vm, tag_resolver: TagResolver | None = None,
+                dvpg_key_lookup: dict[str, str] | None = None) -> DiscoveredVM:
     """Extract a full DiscoveredVM record from a vim.VirtualMachine."""
     config = _safe_get(vm, "config")
     hardware = _safe_get(config, "hardware") if config else None
@@ -419,7 +422,7 @@ def discover_vm(vm, tag_resolver: TagResolver | None = None) -> DiscoveredVM:
         host=host_name,
         annotation=_safe_get(config, "annotation") if config else None,
         disks=extract_disks(vm) if config and hardware else [],
-        networks=extract_networks(vm) if config and hardware else [],
+        networks=extract_networks(vm, dvpg_key_lookup) if config and hardware else [],
         datastores=extract_datastores(vm),
         tags=tags,
     )
@@ -461,6 +464,17 @@ def aggregate_infrastructure(vms: list[DiscoveredVM],
             infra.tag_categories.setdefault(category, set()).add(value)
 
     return infra
+
+
+def build_dvpg_key_lookup(content) -> dict[str, str]:
+    """Map distributed portgroup key (e.g. 'dvportgroup-17') → display name."""
+    lookup: dict[str, str] = {}
+    for net in get_all_objects_of_type(content, vim.dvs.DistributedVirtualPortgroup):
+        cfg = getattr(net, "config", None)
+        key = getattr(cfg, "key", None) if cfg else None
+        if key:
+            lookup[key] = net.name
+    return lookup
 
 
 def build_portgroup_lookup(content) -> dict[str, dict[str, Any]]:
@@ -642,10 +656,12 @@ def main() -> int:
         if args.skip_tags:
             log.info("Tag discovery disabled via --skip-tags")
 
+        dvpg_key_lookup = build_dvpg_key_lookup(session.content)
+
         discovered = []
         for vm in matched:
             try:
-                discovered.append(discover_vm(vm, tag_resolver))
+                discovered.append(discover_vm(vm, tag_resolver, dvpg_key_lookup))
                 log.debug("Discovered %s", vm.name)
             except Exception as e:
                 log.error("Failed to discover %s: %s: %s", vm.name, type(e).__name__, e, exc_info=args.verbose)
