@@ -52,3 +52,7 @@ Things that might be part of a real production deployment but are out of scope f
 - Execution environment images for Ansible Automation Platform
 
 Each of these would be layered on top of the patterns demonstrated here.
+
+## References
+VCF code examples -- https://github.com/vmware/vcf-sdk-python
+VMware automation tagging example -- https://github.com/vmware/vsphere-automation-sdk-python/blob/master/sample_template/sample_template_basic.py
