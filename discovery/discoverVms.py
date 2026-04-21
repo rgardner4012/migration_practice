@@ -95,7 +95,7 @@ class DiscoveredVM:
     disks: list[dict[str, Any]] = field(default_factory=list)
     networks: list[dict[str, Any]] = field(default_factory=list)
     datastores: list[str] = field(default_factory=list)
-    tags: dict[str, str] = field(default_factory=dict)
+    tags: dict[str, list[str]] = field(default_factory=dict)
 
 
 @dataclass
@@ -351,8 +351,8 @@ class TagResolver:
         self.client = rest_client
         self._tag_cache: dict[str, tuple[str, str]] = {}
 
-    def tags_for_vm(self, vm_moid: str) -> dict[str, str]:
-        """Return {category_name: tag_name} for a VM's attached tags."""
+    def tags_for_vm(self, vm_moid: str) -> dict[str, list[str]]:
+        """Return {category_name: [tag_name, ...]} for a VM's attached tags."""
         try:
             dynamic_id = {"id": vm_moid, "type": "VirtualMachine"}
             tag_ids = self.client.tagging.TagAssociation.list_attached_tags(dynamic_id)
@@ -360,11 +360,11 @@ class TagResolver:
             log.warning("Could not list attached tags for %s: %s", vm_moid, e)
             return {}
 
-        result: dict[str, str] = {}
+        result: dict[str, list[str]] = {}
         for tag_id in tag_ids:
             try:
                 tag_name, category_name = self._resolve(tag_id)
-                result[category_name] = tag_name
+                result.setdefault(category_name, []).append(tag_name)
             except Exception as e:
                 log.warning("Could not resolve tag %s: %s", tag_id, e)
         return result
@@ -460,8 +460,8 @@ def aggregate_infrastructure(vms: list[DiscoveredVM],
                     "capacity_gb": None,
                 })
 
-        for category, value in vm.tags.items():
-            infra.tag_categories.setdefault(category, set()).add(value)
+        for category, values in vm.tags.items():
+            infra.tag_categories.setdefault(category, set()).update(values)
 
     return infra
 
