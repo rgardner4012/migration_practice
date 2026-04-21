@@ -304,7 +304,7 @@ def extract_networks(vm, dvpg_key_lookup: dict[str, str] | None = None) -> list[
             "label": device.deviceInfo.label,
             "portgroup": portgroup,
             "mac_address": device.macAddress,
-            "adapter_type": type(device).__name__,
+            "adapter_type": f"vim.vm.device.{type(device).__name__}",
         })
     return networks
 
