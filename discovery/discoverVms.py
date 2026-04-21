@@ -153,8 +153,6 @@ class VsphereSession:
 
         self.content = self.service_instance.RetrieveContent()
 
-        from http.cookies import SimpleCookie
-
         raw_cookie = self.service_instance._stub.cookie
         parsed = SimpleCookie()
         parsed.load(raw_cookie)
