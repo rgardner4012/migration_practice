@@ -283,7 +283,7 @@ def extract_disks(vm) -> list[dict[str, Any]]:
 def extract_networks(vm) -> list[dict[str, Any]]:
     try:
         devices = vm.config.hardware.device
-    except AtrributeError:
+    except AttributeError:
         return []
 
     networks = []
