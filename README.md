@@ -14,11 +14,41 @@ The source of truth for what these VMs *should be* lives in VMware today. Queryi
 
 The end-to-end workflow this repo demonstrates:
 
-1. Group VMs into migration waves based on network bandwidth, storage size, application dependencies, and change windows.
-2. Query vCenter for every portgroup, datastore, resource pool, and tag that migrated VMs will need equivalents for on Nutanix.
-3. Create Nutanix subnets, storage containers, categories, and projects via Terraform before any VM migration begins.
-4. For each VM, capture source attributes and map them to target Nutanix resources through translation rules.
-5. Script the Move API to drive batch migration, capture new Nutanix UUIDs on completion.
-6. Associate the migrated VM's new UUID with the pre-generated Terraform resource block.
-7. Run `terraform plan` with `-detailed-exitcode` to confirm no drift between config and imported state.
+1. Define the batch of systems/environments to migrate, accounting for bandwidth, storage, and environment dependencies.
+2. Script discovery of supporting resources (port groups, datastores, resource pools, tags, etc) and create them as terraform modules following any architectural, policy, and naming standards.
+3. Query vCenter for each VM's pertinent attributes and translate source constructs to target-specific resources (I.e. VLAN_PROD_WEBSERVERS -> prod-webtier via mapping table or translation rules).
+4. Migrate VM's via scripted Nutanix Move using the target manifest from step 3.
+5. Update the manifest with the Nutanix UUID and run terraform import.
+6. Verify clean terraform plan, no destroy/create, no unexpected drift.
+7. Apply any common Ansible roles, and ensure no changes, before adding the server to AAP.
 
+## Manifest structure
+
+The manifest is the heart of the approach. It's two things in one file:
+
+- **A captured snapshot of source infrastructure** — what VMware says exists today.
+- **A translation and decision record** — what each source construct maps to on Nutanix.
+
+## Discovery
+
+The discovery layer is two separate concerns.
+
+**Infrastructure discovery** — finds every network, storage tier, and organizational construct the migrated VMs will depend on. The output is a list of Nutanix resources that need to exist before any VM migration begins. This drives the infrastructure-first Terraform workflow.
+
+**VM discovery** — for each VM, captures the attributes needed to define an equivalent Nutanix VM. Uses pyVmomi for vSphere API access. The output is the `source` blocks of the migration manifest.
+
+## Credential handling
+
+The examples here use variables for credentials to keep this simple, in production a different mechanism would be used (vault/IAM).
+
+## What's not in this repo
+
+Things that might be part of a real production deployment but are out of scope for a reference implementation:
+
+- The actual GitLab CI pipeline definitions (these depend on the organization's runner topology and shared template structure)
+- Integration with an existing CMDB or ServiceNow for approval workflows
+- IPAM integration for target VM IP assignment
+- Sentinel or OPA policies for Terraform plan evaluation
+- Execution environment images for Ansible Automation Platform
+
+Each of these would be layered on top of the patterns demonstrated here.
