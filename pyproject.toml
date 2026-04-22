@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["discovery"]
+markers = [
+    "unit: unit tests, no external services required",
+    "integration: integration tests, requires vcsim running via docker compose",
+]
