@@ -27,7 +27,21 @@ jobs:
         run: pip install -r requirements.txt -r requirements-test.txt
 
       - name: Start vcsim
-        run: docker compose -f docker-compose.vcsim.yml up -d --wait
+        run: docker compose -f docker-compose.vcsim.yml up -d
+
+      - name: Wait for vcsim to be ready
+        run: |
+          for i in $(seq 1 15); do
+            if curl -sk https://127.0.0.1:8989/sdk > /dev/null 2>&1; then
+              echo "vcsim is ready"
+              exit 0
+            fi
+            echo "Waiting for vcsim... ($i/15)"
+            sleep 2
+          done
+          echo "vcsim failed to become ready after 30s"
+          docker compose -f docker-compose.vcsim.yml logs
+          exit 1
 
       - name: Run unit tests
         run: pytest -m unit -v
