@@ -6,7 +6,9 @@ Start the simulator before running:
     VSPHERE_PASSWORD=pass pytest -m integration -v
 
 The vcsim instance is configured with 2 DCs, 2 clusters per DC,
-3 hosts per cluster, and 8 VMs per host (96 VMs total).
+3 hosts per cluster, 2 resource pools per cluster, and 8 VMs per
+resource pool. Total VMs: 2 DCs × 2 clusters × 2 pools × 8 VMs = 64.
+Note: -vm is VMs per resource pool, not per host.
 """
 import pytest
 from pyVmomi import vim
@@ -51,8 +53,8 @@ class TestVmEnumeration:
         assert len(all_vms) > 0
 
     def test_expected_vm_count(self, all_vms):
-        # 2 DCs × 2 clusters × 3 hosts × 8 VMs = 96
-        assert len(all_vms) >= 96
+        # 2 DCs × 2 clusters × 2 pools × 8 VMs = 64
+        assert len(all_vms) == 64
 
     def test_no_templates_in_non_template_list(self, non_template_vms):
         for vm in non_template_vms:
