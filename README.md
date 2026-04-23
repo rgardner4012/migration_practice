@@ -43,8 +43,33 @@ The examples here use variables for credentials to keep this simple. In producti
 
 ## Testing
 
-### Discovery
-Current discovery script integration testing is run against a VCsim instance which can be loaded with docker compose from the docker-compose-vcsim.yml file.
+Tests are split into two tiers marked with `unit` and `integration`.
+
+### Unit tests
+
+No external services required. Cover pure Python logic: manifest serialization, VM filtering helpers, and data transformations.
+
+```bash
+pip install -r requirements.txt -r requirements-test.txt
+pytest -m unit -v
+```
+
+### Integration tests
+
+Run against a live vcsim instance (VMware vCenter simulator). Start it with docker compose before running:
+
+```bash
+docker compose -f docker-compose.vcsim.yml up -d
+VSPHERE_PASSWORD=pass pytest -m integration -v
+```
+
+The simulator is configured with 2 datacenters, 2 clusters per DC, 3 hosts per cluster, 2 resource pools per cluster, and 8 VMs per resource pool (64 VMs total). Integration tests cover session authentication, VM discovery, filter logic, infrastructure lookups, and manifest aggregation.
+
+### CI
+
+GitHub Actions runs both tiers on every pull request targeting `main`. The workflow starts vcsim via docker compose, polls the SDK endpoint until ready, then runs unit and integration tests in sequence. Both must pass before merge.
+
+The `VSPHERE_PASSWORD` secret must be set in the repository (Settings → Secrets and variables → Actions) for the integration step to run.
 
 ## What's not in this repo
 
