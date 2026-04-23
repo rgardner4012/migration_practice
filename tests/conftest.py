@@ -10,9 +10,14 @@ VCSIM_USER = os.environ.get("VCSIM_USER", "user")
 def vcsim_password():
     password = os.environ.get("VSPHERE_PASSWORD")
     if not password:
-        pytest.skip(
-            "VSPHERE_PASSWORD not set — start vcsim via docker compose and set VSPHERE_PASSWORD=pass"
+        running_in_ci = bool(os.environ.get("CI") or os.environ.get("GITHUB_ACTIONS"))
+        message = (
+            "VSPHERE_PASSWORD not set — start vcsim via docker compose and set "
+            "VSPHERE_PASSWORD=pass"
         )
+        if running_in_ci:
+            pytest.fail(f"{message}. Integration tests must not be skipped in CI.")
+        pytest.skip(message)
     return password
 
 
